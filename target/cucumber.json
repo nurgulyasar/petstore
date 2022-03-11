@@ -1,0 +1,254 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-03-11T21:17:55.406Z",
+        "line": 13,
+        "name": "verify pets can be found by status",
+        "description": "",
+        "id": "pet-store-api-tests;verify-pets-can-be-found-by-status;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 311390300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user set request path \"/pet/findByStatus\" \"Available\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/pet/findByStatus\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"Available\"",
+                  "offset": 42
+                }
+              ],
+              "location": "Petstore_stepdefs.user_set_request_path(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1967877700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user send request",
+            "match": {
+              "location": "Petstore_stepdefs.user_send_request()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1281700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "status code should be 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 22
+                }
+              ],
+              "location": "Petstore_stepdefs.status_code_should_be(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 293200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "content-type should be \"application/json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"application/json\"",
+                  "offset": 23
+                }
+              ],
+              "location": "Petstore_stepdefs.content_type_should_be(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 388852700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "status value should be equal to the posted \"Available\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Available\"",
+                  "offset": 43
+                }
+              ],
+              "location": "Petstore_stepdefs.status_value_should_be_equal_to_the_posted(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 37473900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "each item in response should have an id and not nul",
+            "match": {
+              "location": "Petstore_stepdefs.each_item_in_response_should_have_an_id_and_not_nul()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-03-11T21:17:58.132Z",
+        "line": 14,
+        "name": "verify pets can be found by status",
+        "description": "",
+        "id": "pet-store-api-tests;verify-pets-can-be-found-by-status;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 331000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user set request path \"/pet/findByStatus\" \"Pending\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/pet/findByStatus\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"Pending\"",
+                  "offset": 42
+                }
+              ],
+              "location": "Petstore_stepdefs.user_set_request_path(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 680011800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user send request",
+            "match": {
+              "location": "Petstore_stepdefs.user_send_request()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 253700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "status code should be 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 22
+                }
+              ],
+              "location": "Petstore_stepdefs.status_code_should_be(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 247500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "content-type should be \"application/json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"application/json\"",
+                  "offset": 23
+                }
+              ],
+              "location": "Petstore_stepdefs.content_type_should_be(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11735000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "status value should be equal to the posted \"Pending\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Pending\"",
+                  "offset": 43
+                }
+              ],
+              "location": "Petstore_stepdefs.status_value_should_be_equal_to_the_posted(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 16316000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "each item in response should have an id and not nul",
+            "match": {
+              "location": "Petstore_stepdefs.each_item_in_response_should_have_an_id_and_not_nul()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          }
+        ]
+      }
+    ],
+    "name": "Pet Store Api Tests",
+    "description": "",
+    "id": "pet-store-api-tests",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/petstore.feature",
+    "tags": [
+      {
+        "name": "@api",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
